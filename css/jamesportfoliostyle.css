@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root{ 
+       --maincolor:#eaeaea;
+       --secondarycolor:#fff;
+       --bordercolor:#c1c1c1;
+       	font-family: 'Open Sans', 'sans-serif';
+       	list-style-position: inside;
+
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	box-sizing: border-box;
+}
+pre {
+
+	font-family: 'Open Sans', 'sans-serif';
+	font-weight: bold;
+}
+h1, h2, h3, h4 ,h5 h6, strong{
+color:var(--maintext);
+
+}
+
+html {
+    display: table;
+    margin: auto;
+
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+main {
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 25em 25em;
+	grid-template-rows: 4em 2em 19em 2em 35em 2em;
+	grid-template-areas: 
+	"box1 box1"
+	"box2 box2"
+	"box3 box3"
+	"box4 box4"
+	"box5 box5"
+
+	
+ }
+.box1 {
+	background-color: var(--maincolor);
+	border:1px solid var(--bordercolor);
+	grid-area: box1;
+}	
+.box3 {
+	background-color: var(--maincolor);
+	border:1px solid var(--bordercolor);
+	grid-area: box3;
+	
+	
+}
+.box2 {
+	background-color: var(--secondarycolor);
+	
+	grid-area: box2;
+}
+.box4 { 
+	background-color: var(--secondarycolor);
+	
+	grid-area: box4;
+
+}
+
+.box5 {
+	background-color: var(--maincolor);
+	border:1px solid var(--bordercolor);
+	grid-area: box5;
